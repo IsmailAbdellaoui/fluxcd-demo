@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: nodeapp-deployment
 spec:
+  selector:
+    matchLabels:
+      app: hello
   replicas: 1
   template:
     metadata:
