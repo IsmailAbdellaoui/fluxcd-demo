@@ -131,8 +131,8 @@ spec:
       - configMap:
           name: grafana-dashboards
         name: grafana-dashboards
-      - configMap:
-          name: grafana-dashboard-nodeexporter
+      #- configMap:
+      #    name: grafana-dashboard-nodeexporter
         name: grafana-dashboard-nodeexporter
       - configMap:
           name: grafana-dashboard-apiserver
