@@ -42,8 +42,8 @@ spec:
         - mountPath: /etc/grafana/provisioning/dashboards
           name: grafana-dashboards
           readOnly: false
-        - mountPath: /grafana-dashboard-definitions/0/nodeexporter
-          name: grafana-dashboard-nodeexporter
+        #- mountPath: /grafana-dashboard-definitions/0/nodeexporter
+        #  name: grafana-dashboard-nodeexporter
         - mountPath: /grafana-dashboard-definitions/0/apiserver
           name: grafana-dashboard-apiserver
           readOnly: false
