@@ -7,10 +7,10 @@ spec:
   template:
     metadata:
       labels:
-        app: hello-app
+        app: hello
     spec:
       containers:
-      - name: hello-app
+      - name: hello
         imagePullPolicy: Never
         image: ismail/hello-app:1.0.1
         ports:
