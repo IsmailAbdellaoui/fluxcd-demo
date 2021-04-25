@@ -6,7 +6,6 @@ metadata:
   name: node-exporter
   namespace: monitoring
 spec:
-  clusterIP: None
   ports:
   - name: https
     port: 9100
