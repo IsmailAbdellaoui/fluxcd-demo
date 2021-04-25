@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello
-        imagePullPolicy: IfNotPresent
-        image: heroku/nodejs-hello-world
+        imagePullPolicy: Never
+        image: ismail/node-app:1.0.1
         ports:
         - containerPort: 3000
