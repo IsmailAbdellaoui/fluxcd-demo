@@ -46,6 +46,7 @@ spec:
     spec:
       containers: 
       - name: hello-app
-        image: ismail/hello-app:1.0.0
+        imagePullPolicy: Never
+        image: ismail/hello-app:1.0.1
         ports:
         - containerPort: 3000
