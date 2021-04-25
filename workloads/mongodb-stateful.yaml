@@ -31,3 +31,21 @@ spec:
         volumeMounts:
         - name: mongo-volume
           mountPath: /data/db
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hello-app  
+    spec:
+      containers: 
+      - name: hello-app
+        image: ismail/hello-app
+        ports:
+        - containerPort: 3000
